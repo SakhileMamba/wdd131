@@ -111,6 +111,7 @@ section:nth-child(2) p:nth-child(6) {
 
 
 section:nth-child(3) {
+  background-color: antiquewhite;
   display: grid;
   grid-template: auto 1fr / 1fr;
   grid-row: 2 / 3;
