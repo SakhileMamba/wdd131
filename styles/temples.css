@@ -1,0 +1,131 @@
+.hamburger::before {
+  content: "\2630";
+  font-size: 2rem;
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+  font-size: 2.2rem;
+}
+
+.hamburger {
+  width: 44px;
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+header {
+  background-color: #000;
+}
+
+#spread {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+#title {
+  font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
+  background-color: #000;
+}
+
+nav a:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+.active {
+  color: yellow;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+
+}
+
+main h1 {
+  margin: 0 20px;
+}
+
+main>section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  place-items: center;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
