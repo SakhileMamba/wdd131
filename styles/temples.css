@@ -96,7 +96,7 @@ main h1 {
   margin: 0 20px;
 }
 
-main>section {
+main>div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
