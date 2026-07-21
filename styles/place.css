@@ -1,0 +1,127 @@
+:root {
+  --eswatini-flag-outer-most-color: #253B98;
+  --eswatini-flag-outer-color: #FFD600;
+  --eswatini-flag-inner-color: #AF132A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+th {
+  text-align: right;
+}
+
+header,
+footer {
+  background-color: var(--eswatini-flag-outer-most-color);
+  color: white;
+  text-align: center;
+  padding: 45px;
+}
+
+div {
+  margin-top: 0;
+  padding: 0;
+  height: 20px;
+  background-color: var(--eswatini-flag-outer-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+picture {
+  display: block;
+  height: fit-content;
+  background-color: var(--eswatini-flag-inner-color);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+section img {
+  width: 80px;
+  height: auto;
+}
+
+table {
+  align-self: center;
+}
+
+td,
+th {
+  padding: 3px;
+}
+
+h2 {
+  padding: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    position: relative;
+  }
+
+  section {
+    background-color: white;
+    opacity: 70%;
+    white-space: nowrap;
+    min-width: fit-content;
+    max-width: fit-content;
+    min-height: fit-content;
+    max-height: fit-content;
+  }
+
+  section:nth-child(3) {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+  }
+
+  section:nth-child(5) {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  section img {
+    display: none;
+  }
+
+  h2 {
+    position: relative;
+    color: white;
+    background-color: green;
+    width: 90%;
+    left: -30px;
+    z-index: 3;
+    word-spacing: 1rem;
+  }
+
+  #icon::after {
+    content: "☀️";
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place: Eswatini</title>
+  <meta name="author" content="Sakhile Mamba">
+  <meta name="description"
+    content="A web page about Eswatini, a small kingdom in southern Africa, landlocked between South Africa and Mozambique.">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<header>
+  <h1>
+    Eswatini
+  </h1>
+</header>
+<main>
+  <div></div>
+  <picture>
+    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+    <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+    <img src="images/hero-small.webp" alt="Image of rhino in Eswatini." width="1500" height="955">
+  </picture>
+  <section>
+    <h2>
+      Data
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <th>Area:</th>
+          <td>17,364 km&sup2;</td>
+        </tr>
+        <tr>
+          <th>Population:</th>
+          <td>1,236,126</td>
+        </tr>
+        <tr>
+          <th>Capital:</th>
+          <td>Mbabane</td>
+        </tr>
+        <tr>
+          <th>Languages:</th>
+          <td>SiSwati, English</td>
+        </tr>
+        <tr>
+          <th>Currency:</th>
+          <td>Swazi Lilangeni</td>
+        </tr>
+        <tr>
+          <th>Time Zone:</th>
+          <td>UTC+2</td>
+        </tr>
+        <tr>
+          <th>Calling Code:</th>
+          <td>+268</td>
+        </tr>
+        <tr>
+          <th>Internet TLD:</th>
+          <td>.sz</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr>
+  <section>
+    <h2 id="icon">
+      Weather
+    </h2>
+    <img src="images/place-sunny.svg" alt="Sunny weather image depiction">
+    <table>
+      <tbody>
+        <tr>
+          <th>Temperature:</th>
+          <td>28 &deg;C</td>
+        </tr>
+        <tr>
+          <th>Conditions:</th>
+          <td>Sunny</td>
+        </tr>
+        <tr>
+          <th>Wind:</th>
+          <td>10 km/h</td>
+        </tr>
+        <tr>
+          <th>Wind Chill:</th>
+          <td id="wind_chill"></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+<footer>
+  <p>
+    &copy; <span id="currentyear"></span> - Sakhile Mamba - Eswatini
+  </p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+
+</html>
