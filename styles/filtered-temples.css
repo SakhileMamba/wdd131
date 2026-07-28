@@ -98,12 +98,10 @@ main h1 {
 
 #temples {
   display: grid;
-  align-items: space-between;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   /*place-items: center;*/
   margin: 20px;
-
 }
 
 #temples>div {
