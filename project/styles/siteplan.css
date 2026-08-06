@@ -1,0 +1,208 @@
+/* Google Fonts for Montserrat (Headings) and Open Sans (Body) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  /* Color Palette Variables */
+  --primary-color: #0F172A;
+  /* Deep Slate Navy */
+  --secondary-color: #F59E0B;
+  /* Amber / Gold Accent */
+  --accent1-color: #1E293B;
+  /* Dark Blue-Gray */
+  --accent2-color: #F8FAFC;
+  /* Off-White */
+
+  /* Typography Variables */
+  --heading-font: "Montserrat", sans-serif;
+  --paragraph-font: "Open Sans", Helvetica, sans-serif;
+
+  /* Usage Color Scheme */
+  --headline-color-on-white: #0F172A;
+  --headline-color-on-color: #F8FAFC;
+  --paragraph-color-on-white: #1E293B;
+  --paragraph-color-on-color: #F8FAFC;
+  --paragraph-background-color: #0F172A;
+  --nav-link-color: #F8FAFC;
+  --nav-background-color: #0F172A;
+  --nav-hover-link-color: #0F172A;
+  --nav-hover-background-color: #F59E0B;
+}
+
+
+/*  Template Rules */
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  /*max-width: 300px;*/
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--secondary-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+header>h1,
+header>h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+  color: #fff;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+  color: #000;
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding: 10px 1em;
+  min-width: 120px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+
+.sitemap>div {
+  text-align: center;
+}
+
+.sm-home {
+  grid-area: home;
+  background-color: var(--accent1-color);
+  color: var(--paragraph-color-on-color);
+  line-height: 3em;
+}
+
+.sm-page2 {
+  grid-area: page2;
+  background-color: var(--accent1-color);
+  color: var(--paragraph-color-on-color);
+  line-height: 3em;
+}
+
+.sm-page3 {
+  grid-area: page3;
+  background-color: var(--accent1-color);
+  color: var(--paragraph-color-on-color);
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Site Plan - Movie Tracklist</title>
+  <link rel="stylesheet" href="styles/siteplan.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Movie Tracklist</h1>
+    <h2>Sakhile Mamba</h2>
+    <h2>WDD 131</h2>
+  </header>
+  <main>
+    <hr />
+    <h2>Site Overview</h2>
+
+    <h3>Site Name</h3>
+    <p><strong>Name:</strong> Movie Tracklist</p>
+    <p><strong>Description:</strong> I chose this name because it clearly communicates the web application's primary
+      purpose: allowing movie lovers to track, organize, and manage their film viewing habits, watchlists, and personal
+      reviews.</p>
+
+    <h3>Site Purpose</h3>
+    <p>The purpose of Movie Tracklist is to provide users with a centralized, interactive web application to browse
+      movie data, curate a personalized watchlist, and log detailed ratings and reviews. The home page allows users to
+      dynamically filter titles using JavaScript by release date, genre, and rating. The second page manages a watchlist
+      stored in <code>localStorage</code>, while the third page provides a review form where users can submit ratings,
+      log custom notes, and view saved feedback.</p>
+
+    <h3>Scenarios</h3>
+    <ul>
+      <li><strong>Scenario 1:</strong> How can I filter movies to discover highly rated sci-fi films released in recent
+        years?</li>
+      <li><strong>Scenario 2:</strong> How do I add movies to my personal watchlist and ensure they remain saved when I
+        close or refresh my browser?</li>
+      <li><strong>Scenario 3:</strong> Where can I log my personal review and rating for a movie I just finished
+        watching, and where will those notes be saved?</li>
+    </ul>
+
+    <hr />
+    <h2>Branding</h2>
+    <h3>Website Logo</h3>
+    <img src="images/logo.png" alt="Movie Tracklist Logo" />
+
+    <hr />
+    <h2>Style Guide</h2>
+
+    <h3>Color Palette</h3>
+    <p>Palette URL:</p>
+    <a href="https://coolors.co/0f172a-f59e0b-1e293b-f8fafc"
+      target="_blank">https://coolors.co/0f172a-f59e0b-1e293b-f8fafc</a>
+
+    <table class="colors">
+      <tr>
+        <th>Primary</th>
+        <th>Secondary (Accent)</th>
+        <th>Accent 1</th>
+        <th>Accent 2</th>
+      </tr>
+      <tr>
+        <td class="primary">#0F172A</td>
+        <td class="secondary">#F59E0B</td>
+        <td class="accent1">#1E293B</td>
+        <td class="accent2">#F8FAFC</td>
+      </tr>
+    </table>
+
+    <h3>Typography</h3>
+    <h4>Heading Font: Montserrat</h4>
+    <p>Used for site titles, section headings (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>,
+      <code>&lt;h3&gt;</code>), and movie card titles to give the web app a modern, cinematic aesthetic.
+    </p>
+
+    <h4>Paragraph Font: Open Sans</h4>
+    <p>Used for body text, movie summaries, form labels, input fields, and user review notes to maximize readability
+      across mobile and desktop devices.</p>
+
+    <h3>Normal paragraph example</h3>
+    <p>
+      Movie Tracklist allows film enthusiasts to easily search, filter, and organize their favorite movies. Browse by
+      release year, filter by genre, or sort by top user ratings all in one place.
+    </p>
+
+    <h3>Colored paragraph example</h3>
+    <p class="colored">
+      Keep track of your cinema journey! Add upcoming releases to your personal watchlist saved in local storage, and
+      log your custom ratings and review notes after every watch party.
+    </p>
+
+    <h3>Navigation</h3>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="watchlist.html">Watchlist</a>
+      <a href="reviews.html">Reviews</a>
+    </nav>
+
+    <hr />
+    <h2>Site Map</h2>
+    <div class="sitemap">
+      <div class="sm-home">Home (Browse & Filter)</div>
+      <div class="sm-page2">Watchlist (Local Storage)</div>
+      <div class="sm-page3">Reviews (Log & View)</div>
+
+      <div class="top">&nbsp;</div>
+      <div class="left">&nbsp;</div>
+      <div class="right">&nbsp;</div>
+    </div>
+
+    <hr />
+    <h2>Wireframes</h2>
+
+    <h3>Mobile View Wireframe</h3>
+    <p>Single-column layout with stacked filter options, full-width movie cards, and direct touch navigation.</p>
+    <img src="images/wireframe_mobile.webp" alt="Mobile View Wireframe" />
+
+    <h3>Desktop View Wireframe</h3>
+    <p>Multi-column responsive grid layout with a sticky header navbar, horizontal filter controls, and side-by-side
+      review forms.</p>
+    <img src="images/wireframe_desktop.webp" alt="Desktop View Wireframe" />
+  </main>
+</body>
+
+</html>
