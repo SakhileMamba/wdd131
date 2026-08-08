@@ -102,14 +102,9 @@ main {
 }
 
 /* Radio buttons & Checkboxes */
-.stars {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
 
-.stars label.star {
+
+label.star {
   display: inline-flex;
   align-items: center;
   margin-top: 0;
