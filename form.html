@@ -4,16 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form</title>
-
+  <title>Product Review Form</title>
   <meta name="author" content="Sakhile Mamba">
-  <meta name="description" content="An HTML form">
+  <meta name="description" content="A product review form page for WDD 131.">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/form.css">
-  <script src="scripts/form.js"></script>
+  <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
 
+  <main>
+    <form action="review.html" method="get" class="wf1">
+      <fieldset>
+        <legend>Review Details</legend>
+
+        <label for="pname">Product Name*</label>
+        <select name="pname" id="pname" required>
+          <option value="" disabled selected>Select a Product ... &#9662;</option>
+        </select>
+
+        <div class="rating-label">Overall Rating*</div>
+        <div class="stars">
+          <label class="star"><input type="radio" name="rating" value="1" id="star1" required> ☆</label>
+          <label class="star"><input type="radio" name="rating" value="2" id="star2" required> ☆☆</label>
+          <label class="star"><input type="radio" name="rating" value="3" id="star3" required> ☆☆☆</label>
+          <label class="star"><input type="radio" name="rating" value="4" id="star4" required> ☆☆☆☆</label>
+          <label class="star"><input type="radio" name="rating" value="5" id="star5" required> ☆☆☆☆☆</label>
+        </div>
+
+        <label for="date">Date of Installation*</label>
+        <input type="date" id="date" name="date" required>
+
+        <div class="check-group-label">Which features did you find useful in the product?</div>
+        <div class="sub-label">(Check all that apply)</div>
+        <label class="checkbox-label"><input type="checkbox" id="durability" name="features" value="durability">
+          Durability</label>
+        <label class="checkbox-label"><input type="checkbox" id="ease" name="features" value="ease"> Ease of Use</label>
+        <label class="checkbox-label"><input type="checkbox" id="performance" name="features" value="performance">
+          Performance</label>
+        <label class="checkbox-label"><input type="checkbox" id="design" name="features" value="design"> Design</label>
+
+        <label for="written">Written Review <span>(Optional)</span></label>
+        <textarea name="written" id="written" rows="4"></textarea>
+
+        <label for="name">Your Name <span>(Optional)</span></label>
+        <input type="text" name="name" id="name">
+      </fieldset>
+
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> - Sakhile Mamba - Eswatini</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 
 </html>
