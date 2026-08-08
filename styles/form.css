@@ -11,8 +11,9 @@ body {
   color: #333;
 }
 
-
-main {
+header,
+main,
+footer {
   max-width: 500px;
   margin: 0 auto;
 }
@@ -101,8 +102,6 @@ main {
   border-left: 6px solid #008000;
 }
 
-/* Radio buttons & Checkboxes */
-
 
 label.star {
   display: inline-flex;
@@ -158,10 +157,16 @@ footer p {
   margin: 0.3rem 0;
 }
 
-#review {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  text-align: center;
+/* Media Queries */
+@media screen and (min-width: 38rem) {
+
+  header,
+  main,
+  footer {
+    max-width: 600px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
 }
