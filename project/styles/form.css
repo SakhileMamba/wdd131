@@ -1,0 +1,172 @@
+/* Box-sizing normalization */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header,
+main,
+footer {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #2b1029;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Form Styles */
+.wf1 fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.2rem;
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.wf1 legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: #2b1029;
+}
+
+.wf1 label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.wf1 label span {
+  font-weight: normal;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.wf1 div.rating-label,
+.wf1 div.check-group-label {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.wf1 div.sub-label {
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+/* Inputs, Select & Textarea */
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.4rem;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background-color: #fafafa;
+  font-size: 1rem;
+}
+
+/* Validation Feedback Styling */
+.wf1 input:required,
+.wf1 select:required {
+  border-left: 6px solid #b30000;
+}
+
+.wf1 input:required:valid,
+.wf1 select:required:valid {
+  border-left: 6px solid #008000;
+}
+
+
+label.star {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.wf1 label.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.wf1 input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #2b1029;
+  color: #ffffff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.wf1 input[type="submit"]:hover {
+  background-color: #4a1d47;
+}
+
+/* Footer */
+footer {
+  background-color: #2b1029;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+/* Media Queries */
+@media screen and (min-width: 38rem) {
+
+  header,
+  main,
+  footer {
+    max-width: 600px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
