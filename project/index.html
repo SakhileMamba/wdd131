@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Tracklist</title>
+  <meta name="author" content="Sakhile Mamba">
+  <meta name="description"
+    content="Browse the one hundred highest rated movies on IMDb, filter them by release date, genre and rating, and save the ones you want to see to your own watchlist.">
+
+
+  <link rel="stylesheet" href="styles/tracklist.css">
+  <link rel="stylesheet" href="styles/tracklist-large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap"
+    rel="stylesheet">
+    
+  <script src="scripts/movies.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="bar">
+      <a href="index.html" class="logo">Movie Tracklist</a>
+      <button id="nav-button" class="hamburger" aria-label="Navigation menu" aria-expanded="false"></button>
+    </div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="watchlist.html">Watchlist</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Browse Movies</h1>
+    <p>These are the one hundred highest rated films on IMDb. Narrow the list down by release date, genre or rating,
+      then save the ones you still need to see to your watchlist.</p>
+
+    <form id="filter-form" class="filters">
+      <div>
+        <label for="search">Search</label>
+        <input type="search" id="search" name="search" placeholder="Search movies...">
+      </div>
+      <div>
+        <label for="year">Release Date</label>
+        <select id="year" name="year">
+          <option value="all">Any year</option>
+          <option value="2010">2010 to now</option>
+          <option value="2000">2000 to 2009</option>
+          <option value="1990">1990 to 1999</option>
+          <option value="1980">1980 to 1989</option>
+          <option value="older">Before 1980</option>
+        </select>
+      </div>
+      <div>
+        <label for="genre">Genre</label>
+        <select id="genre" name="genre">
+          <option value="all">Any genre</option>
+        </select>
+      </div>
+      <div>
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating">
+          <option value="0">Any rating</option>
+          <option value="5">5.0 and above</option>
+          <option value="6">6.0 and above</option>
+          <option value="7">7.0 and above</option>
+          <option value="8">8.0 and above</option>
+          <option value="9">9.0 and above</option>
+        </select>
+      </div>
+      <button type="button" id="clear-filters">Clear</button>
+    </form>
+
+    <p class="notice" id="notice" aria-live="polite"></p>
+    <p class="count" id="result-count"></p>
+    <div class="movie-grid" id="movie-list"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> - Sakhile Mamba - Eswatini</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+
+</html>

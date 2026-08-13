@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References - Movie Tracklist</title>
+  <meta name="author" content="Sakhile Mamba">
+  <meta name="description"
+    content="The sources of the movie data, the fonts and the documentation used to build Movie Tracklist.">
+</head>
+
+<body>
+  <h1>References</h1>
+  <p>These are the sources used to build Movie Tracklist.</p>
+
+  <h2>Movie Data and Images</h2>
+  <ul>
+    <li>Movie titles, plots, release years, genres, ratings and posters come from the
+      <a href="https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies">IMDb Top 100 Movies API</a> on
+      RapidAPI. A copy of the response is saved in <code>data/movies.json</code> so the site still works if the API is
+      unavailable.
+    </li>
+    <li>The poster images are served by IMDb from <a href="https://www.imdb.com/">imdb.com</a> and are used here for a
+      student coursework project only.</li>
+    <li>A few of the posters have been taken down by IMDb. Those cards fall back to <code>images/no-poster.png</code>,
+      which was made for this site.</li>
+  </ul>
+
+  <h2>Fonts</h2>
+  <ul>
+    <li><a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a> and
+      <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> from Google Fonts.
+    </li>
+  </ul>
+
+  <h2>Documentation</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">MDN: Window.localStorage</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">MDN: Using the Fetch API</a>
+    </li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN: The form element</a></li>
+  </ul>
+
+  <p><a href="index.html">Back to Movie Tracklist</a></p>
+</body>
+
+</html>

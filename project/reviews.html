@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - Movie Tracklist</title>
+  <meta name="author" content="Sakhile Mamba">
+  <meta name="description"
+    content="Rate a movie you have finished watching, log your notes about it, and read the reviews you have already saved on Movie Tracklist.">
+
+  <link rel="stylesheet" href="styles/tracklist.css">
+  <link rel="stylesheet" href="styles/tracklist-large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <script src="scripts/movies.js" defer></script>
+  <script src="scripts/reviews.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="bar">
+      <a href="index.html" class="logo">Movie Tracklist</a>
+      <button id="nav-button" class="hamburger" aria-label="Navigation menu" aria-expanded="false"></button>
+    </div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="watchlist.html">Watchlist</a></li>
+        <li><a href="reviews.html" class="active" aria-current="page">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Reviews</h1>
+    <p>Finished a film? Give it a rating out of five, write down what you thought of it while it is still fresh, and
+      your review will be saved in this browser for you to read again later.</p>
+
+    <p class="notice" id="notice" aria-live="polite"></p>
+
+    <div class="review-page">
+      <form id="review-form" class="review-form" method="get">
+        <fieldset>
+          <legend>Log a Review</legend>
+
+          <label for="movie">Movie*</label>
+          <select id="movie" name="movie" required>
+            <option value="" disabled selected>Select a movie ...</option>
+          </select>
+
+          <p class="group-label">Your Rating*</p>
+          <label class="choice" for="star1"><input type="radio" id="star1" name="rating" value="1" required> 1 star -
+            Skip it</label>
+          <label class="choice" for="star2"><input type="radio" id="star2" name="rating" value="2" required> 2 stars -
+            Weak</label>
+          <label class="choice" for="star3"><input type="radio" id="star3" name="rating" value="3" required> 3 stars -
+            Worth a watch</label>
+          <label class="choice" for="star4"><input type="radio" id="star4" name="rating" value="4" required> 4 stars -
+            Really good</label>
+          <label class="choice" for="star5"><input type="radio" id="star5" name="rating" value="5" required> 5 stars -
+            A favourite</label>
+
+          <label for="watched">Date Watched*</label>
+          <input type="date" id="watched" name="watched" required>
+
+          <p class="group-label">What stood out?</p>
+          <p class="sub-label">(Check all that apply)</p>
+          <label class="choice" for="story"><input type="checkbox" id="story" name="highlights" value="Story">
+            Story</label>
+          <label class="choice" for="acting"><input type="checkbox" id="acting" name="highlights" value="Acting">
+            Acting</label>
+          <label class="choice" for="visuals"><input type="checkbox" id="visuals" name="highlights" value="Visuals">
+            Visuals</label>
+          <label class="choice" for="soundtrack"><input type="checkbox" id="soundtrack" name="highlights"
+              value="Soundtrack"> Soundtrack</label>
+
+          <label for="notes">Your Notes <span>(Optional)</span></label>
+          <textarea id="notes" name="notes" rows="4"></textarea>
+
+          <label for="reviewer">Your Name <span>(Optional)</span></label>
+          <input type="text" id="reviewer" name="reviewer">
+        </fieldset>
+
+        <input type="submit" value="Save Review">
+      </form>
+
+      <section>
+        <h2>Saved Reviews</h2>
+        <p class="count" id="review-count"></p>
+        <div id="saved-reviews"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> - Sakhile Mamba - Eswatini</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+
+</html>

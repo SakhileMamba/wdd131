@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchlist - Movie Tracklist</title>
+  <meta name="author" content="Sakhile Mamba">
+  <meta name="description"
+    content="View and manage the movies you saved from Movie Tracklist. Your watchlist is stored in your own browser so it is still there when you come back.">
+    
+  <link rel="stylesheet" href="styles/tracklist.css">
+  <link rel="stylesheet" href="styles/tracklist-large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <script src="scripts/movies.js" defer></script>
+  <script src="scripts/watchlist.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="bar">
+      <a href="index.html" class="logo">Movie Tracklist</a>
+      <button id="nav-button" class="hamburger" aria-label="Navigation menu" aria-expanded="false"></button>
+    </div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="watchlist.html" class="active" aria-current="page">Watchlist</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Watchlist</h1>
+    <p>Every movie you add from the home page is kept in this browser, so it is still waiting for you the next time you
+      open the site. Remove a title once you have watched it, then log what you thought of it on the reviews page.</p>
+
+    <p class="notice" id="notice" aria-live="polite"></p>
+    <p class="count" id="watchlist-count"></p>
+    <button id="clear-watchlist">Clear Watchlist</button>
+
+    <div class="movie-grid" id="watchlist"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> - Sakhile Mamba - Eswatini</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+
+</html>
